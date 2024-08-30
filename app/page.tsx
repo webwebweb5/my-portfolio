@@ -6,7 +6,7 @@ import { PiHouseLight, PiGithubLogoLight } from "react-icons/pi";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <div className="p-5 fixed bottom-28 flex flex-col items-center justify-center mx-auto w-full">
         <Image
           height={250}
@@ -35,13 +35,13 @@ export default function Home() {
             </Link>
           </Button>
           <Button variant="ghost" size="icon">
-            <Link href={"https://github.com/webwebweb5"}>
+            <Link href={"https://github.com/webwebweb5"} target="_blank">
               <PiGithubLogoLight className="h-6 w-6" />
             </Link>
           </Button>
           <ModeToggle />
         </div>
       </div>
-    </>
+    </main>
   );
 }
