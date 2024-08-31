@@ -13,7 +13,7 @@ export function ProjectCard({
       <div className="rounded-lg duration-200 transition-all ease-in">
         <Link href="#" className="w-full">
           <img
-            className="rounded-t-lg h-56 w-full object-cover brightness-95"
+            className="rounded-t-lg h-64 w-full object-cover brightness-95"
             src={imageURL}
             alt=""
           />

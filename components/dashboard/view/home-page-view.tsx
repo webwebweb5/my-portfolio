@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ProjectCard } from "@/components/shared/project-card";
 import { PROJECT_DATA } from "@/constants";
 import { ProjectCardProps } from "@/types";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 
 export function HomePageView() {
   return (
@@ -60,15 +61,21 @@ export function HomePageView() {
             <div className="hover:bg-neutral-800 rounded-lg duration-200 transition-all ease-in p-4">
               <div className="flex items-center gap-x-3">
                 <div>
-                  <h2 className="text-sm font-medium">
-                    Smooth Animation with React and Framer Motion
-                  </h2>
-                  <div className="flex items-center gap-x-2 font-bold mt-2">
+                  <div className="w-full text-sm font-medium flex flex-col gap-1">
+                    <FaQuoteLeft />
+                    <p className="text-center px-6">
+                      This was the harshness of reality, and also the beauty of
+                      fate. In this world, everyone is a main character, but
+                      everyone is also a side character.
+                    </p>
+                    <FaQuoteRight className="self-end" />
+                  </div>
+                  <div className="flex items-center gap-x-2 font-bold mt-1">
                     <p className="bg-[#282828] w-fit text-neutral-300 rounded-md px-2 h-5 flex items-center justify-center text-[11px] ">
-                      TypeScript
+                      Quote
                     </p>
                     <div className="w-1 h-1 rounded-full bg-neutral-400" />
-                    <span className="text-xs">Sunday, July 22, 2023</span>
+                    <span className="text-xs">UNKNOWN</span>
                   </div>
                 </div>
               </div>

@@ -1,26 +1,24 @@
 "use client";
 import React from "react";
 import {
-  PiBookOpenTextLight,
   PiMagicWandThin,
   PiShapesThin,
   PiHouseLight,
   PiEnvelopeLight,
   PiTerminalWindowFill,
-  PiPhoneCallThin,
   PiPhoneCallLight,
   PiGithubLogoLight,
   PiMapPinLight,
   PiLinkedinLogoLight,
 } from "react-icons/pi";
-import { SiAdobe } from "react-icons/si";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { Label } from "@/components/shared/label";
 import { Button } from "@/components/ui/button";
 import { DevBadge } from "@/components/shared/dev-badge";
+
+const numberOfProjects = 4;
 
 export function LeftSectionView() {
   return (
@@ -105,15 +103,15 @@ export function LeftSectionView() {
 
           <div className="w-full">
             <div className="flex flex-wrap gap-1.5 text-xs mt-4 mb-2">
-              <DevBadge name="ReactJS" color="text-blue-500" />
-              <DevBadge name="NextJS" color="text-gray-500" />
-              <DevBadge name="NodeJS" color="text-green-500" />
-              <DevBadge name="GO" color="text-blue-400" />
+              <DevBadge name="ReactJS" color="#3b82f6" />
+              <DevBadge name="NextJS" color="#6b7280" />
+              <DevBadge name="NodeJS" color="#22c55e" />
+              <DevBadge name="GO" color="#60a5fa" />
             </div>
           </div>
 
           <div className="w-full mt-2 text-neutral-300">
-            <h2 className="font-bold my-4">Bio</h2>
+            <h2 className="font-bold my-4">About Me</h2>
             <p className="text-[12px] font-regular my-3">
               Crafting seamless full-stack web experiences, turning ideas into
               polished, responsive apps with creativity and precision.
@@ -128,7 +126,7 @@ export function LeftSectionView() {
               </div>
               <div className="flex items-center gap-x-1">
                 <PiMagicWandThin />
-                <span className="text-xs font-regular">7 Projects</span>
+                <span className="text-xs font-regular">{numberOfProjects} Projects</span>
               </div>
             </div>
 
