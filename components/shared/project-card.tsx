@@ -11,7 +11,7 @@ export function ProjectCard({
   return (
     <div className="bg-[#1C1C1C] rounded-lg text-neutral-400 hover:scale-[1.025] duration-500 transition-all">
       <div className="rounded-lg duration-200 transition-all ease-in">
-        <Link href="#" className="w-full">
+        <Link href="/dashboard/1" className="w-full">
           <img
             className="rounded-t-lg h-64 w-full object-cover brightness-95"
             src={imageURL}

@@ -17,10 +17,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { DevBadge } from "@/components/shared/dev-badge";
+import { usePathname } from "next/navigation";
+
+// ----------------------------------------------------------------------
 
 const numberOfProjects = 4;
 
+// ----------------------------------------------------------------------
+
 export function LeftSectionView() {
+  const pathname = usePathname()
+
+  const isDashboard = pathname === "/dashboard"
+
   return (
     <>
       <motion.div
@@ -30,7 +39,8 @@ export function LeftSectionView() {
           opacity: 1,
           transition: { duration: 0.3, type: "spring", stiffness: 200 },
         }}
-        className="block w-full md:w-80 h-fit md:sticky top-4"
+        className={`${isDashboard ? "block" : "hidden md:block" } w-full md:w-80 h-fit md:sticky top-4`}
+        // className="block w-full md:w-80 h-fit md:sticky top-4"
       >
         <div className="md:w-80 w-full p-4 border border-neutral-800 rounded-2xl h-full bg-[#1C1C1C]">
           <div className="flex">
