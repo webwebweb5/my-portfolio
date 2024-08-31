@@ -12,7 +12,6 @@ export default function Home() {
           height={250}
           width={250}
           className="rounded-full aspect-square object-cover object-top"
-          objectFit="cover"
           src="/images/profile.jpg"
           alt="profile"
         />

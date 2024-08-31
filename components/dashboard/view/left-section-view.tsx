@@ -39,7 +39,6 @@ export function LeftSectionView() {
                 height={250}
                 width={250}
                 className="w-28 h-28 rounded-full aspect-square object-cover object-top"
-                objectFit="cover"
                 src="/images/profile.jpg"
                 alt="profile"
               />

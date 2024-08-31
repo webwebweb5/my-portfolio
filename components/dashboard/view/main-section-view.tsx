@@ -7,7 +7,7 @@ import { PROJECT_DATA } from "@/constants";
 import { ProjectCardProps } from "@/types";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
 
-export function HomePageView() {
+export function MainSectionView() {
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
