@@ -20,6 +20,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Label } from "@/components/shared/label";
 import { Button } from "@/components/ui/button";
+import { DevBadge } from "@/components/shared/dev-badge";
 
 export function LeftSectionView() {
   return (
@@ -31,7 +32,7 @@ export function LeftSectionView() {
           opacity: 1,
           transition: { duration: 0.3, type: "spring", stiffness: 200 },
         }}
-        className="hidden md:block w-full md:w-80 h-fit sticky top-5"
+        className="block w-full md:w-80 h-fit md:sticky top-4"
       >
         <div className="md:w-80 w-full p-4 border border-neutral-800 rounded-2xl h-full bg-[#1C1C1C]">
           <div className="flex">
@@ -48,24 +49,24 @@ export function LeftSectionView() {
                 Phiriyakorn Maneekongrit
               </h1>
 
-              <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2">
+              <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2 hover:scale-[1.025] duration-500 transition-all">
                 <PiPhoneCallLight />
                 <span className="text-xs">(+66) 95-450-1590</span>
               </div>
 
-              <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2">
+              <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2 hover:scale-[1.025] duration-500 transition-all">
                 <PiEnvelopeLight />
                 <Link href="mailto:phiriyakorn@gmail.com" className="text-xs">
                   phiriyakorn@gmail.com
                 </Link>
               </div>
 
-              <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2">
+              <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2 hover:scale-[1.025] duration-500 transition-all">
                 <PiMapPinLight />
                 <span className="text-xs">Chiang Mai, Thailand</span>
               </div>
 
-              <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2">
+              <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2 hover:scale-[1.025] duration-500 transition-all">
                 <PiLinkedinLogoLight />
                 <Link
                   href={"https://www.linkedin.com/in/phiriyakorn/"}
@@ -75,18 +76,9 @@ export function LeftSectionView() {
                   linkedin.com/in/phiriyakorn
                 </Link>
               </div>
-
-              <div className="flex w-full">
-                <div className="flex gap-x-1 text-xs mt-4 mb-2">
-                  <Label name="ReactJS" />
-                  <Label name="NextJS" />
-                  <Label name="NodeJS" />
-                  <Label name="Go" />
-                </div>
-              </div>
             </div>
 
-            <div className="flex gap-x-1 w-full h-fit justify-end">
+            <div className="flex gap-1 w-full h-fit justify-end">
               <Button
                 variant="secondary"
                 size="icon"
@@ -111,9 +103,18 @@ export function LeftSectionView() {
             </div>
           </div>
 
+          <div className="w-full">
+            <div className="flex flex-wrap gap-1.5 text-xs mt-4 mb-2">
+              <DevBadge name="ReactJS" color="text-blue-500" />
+              <DevBadge name="NextJS" color="text-gray-500" />
+              <DevBadge name="NodeJS" color="text-green-500" />
+              <DevBadge name="GO" color="text-blue-400" />
+            </div>
+          </div>
+
           <div className="w-full mt-2 text-neutral-300">
             <h2 className="font-bold my-4">Bio</h2>
-            <p className="text-[12px] font-RubikRegular my-3">
+            <p className="text-[12px] font-regular my-3">
               Crafting seamless full-stack web experiences, turning ideas into
               polished, responsive apps with creativity and precision.
             </p>
@@ -121,13 +122,13 @@ export function LeftSectionView() {
             <div className="mt-6 flex justify-between text-sm">
               <div className="flex items-center gap-x-1">
                 <PiShapesThin />
-                <span className="text-xs font-RubikRegular">
+                <span className="text-xs font-regular">
                   Full-stack developer
                 </span>
               </div>
               <div className="flex items-center gap-x-1">
                 <PiMagicWandThin />
-                <span className="text-xs font-RubikRegular">7 Projects</span>
+                <span className="text-xs font-regular">7 Projects</span>
               </div>
             </div>
 

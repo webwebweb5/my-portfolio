@@ -6,8 +6,8 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <main className="max-w-[78rem] mx-auto px-4">
-      <div className="gap-4 flex md:mt-5 flex-col md:flex-row">
+    <main className="max-w-[78rem] mx-auto p-4">
+      <div className="gap-4 flex flex-col md:flex-row">
         <LeftSectionView />
         {children}
         {/* <View /> */}

@@ -1,3 +1,5 @@
+import { HomePageView } from "@/components/dashboard/view/home-page-view";
+
 export default function DashboardPage() {
-  return <div className="">DashboardPage</div>;
+  return <HomePageView />;
 }
