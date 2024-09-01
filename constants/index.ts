@@ -2,6 +2,27 @@ import { ProjectCardProps } from "@/types";
 
 export const PROJECT_DATA: ProjectCardProps[] = [
   {
+    imageURL: "/images/financial-tracker.png",
+    title: "Financial Tracker",
+    badges: [
+      {
+        name: "Vite",
+        color: "#9333ea",
+      },
+      {
+        name: "TypeScript",
+        color: "#2563eb",
+      },
+      {
+        name: "ExpressJS",
+        color: "#22c55e",
+      },
+    ],
+    description:
+      "Track your income and expenses effortlessly, manage budgets, and achieve financial goals with our simple and intuitive app.",
+    isTop: true,
+  },
+  {
     imageURL: "/images/questify.png",
     title: "Questify",
     badges: [

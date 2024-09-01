@@ -53,6 +53,7 @@ export function MainSectionView() {
                 title={project.title}
                 badges={project.badges}
                 description={project.description}
+                isTop={project.isTop}
               />
             ))}
           </div>

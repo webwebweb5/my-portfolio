@@ -3,6 +3,7 @@ export interface ProjectCardProps {
   title: string;
   badges: BadgeProps[];
   description: string;
+  isTop?: boolean
 }
 
 export interface BadgeProps {

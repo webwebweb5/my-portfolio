@@ -84,7 +84,7 @@ export function ProjectContentView() {
           transition={{ delay: 0.4 }}
           className="text-3xl font-bold text-center "
         >
-          Questify
+          WIP
         </motion.h1>
         <div className="flex items-center gap-x-2 justify-center my-4">
           <p className="bg-[#282828] w-fit text-neutral-300 rounded-md px-2 h-5 flex items-center justify-center text-[10px] ">
