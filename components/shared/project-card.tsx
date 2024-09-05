@@ -21,7 +21,7 @@ export function ProjectCard({
           />
         </Link>
         <div className="p-6">
-          <Link href="#" className="w-fit">
+          <Link href={link} className="w-fit">
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-neutral-300">
               {title}
             </h5>
