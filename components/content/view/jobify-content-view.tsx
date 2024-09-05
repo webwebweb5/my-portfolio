@@ -14,20 +14,20 @@ import { DevBadge } from "@/components/shared/dev-badge";
 
 const badges = [
   {
-    name: "Senior Project",
-    color: "#eab308",
+    name: "ReactJS",
+    color: "#3b82f6",
   },
   {
-    name: "NextJS",
-    color: "#6b7280",
+    name: "NodeJS",
+    color: "#22c55e",
   },
   {
-    name: "Spring Boot",
-    color: "#16a34a",
+    name: "MongoDB",
+    color: "#22c55e",
   },
 ];
 
-export function QuestifyContentView() {
+export function JobifyContentView() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -80,10 +80,15 @@ export function QuestifyContentView() {
                 <Button
                   variant="default"
                   className="h-8 rounded-md px-3 text-xs"
-                  disabled
+                  asChild
                 >
-                  <PiGlobeLight className="mr-2 h-4 w-4" />
-                  Visit Website
+                  <Link
+                    href="https://mern-stack-course-jobify.onrender.com/"
+                    target="_blank"
+                  >
+                    <PiGlobeLight className="mr-2 h-4 w-4" />
+                    Visit Website
+                  </Link>
                 </Button>
                 <Button
                   variant="secondary"
@@ -91,7 +96,7 @@ export function QuestifyContentView() {
                   asChild
                 >
                   <Link
-                    href="https://github.com/webwebweb5/questify-frontend-new"
+                    href="https://github.com/webwebweb5/mern-stack-course-jobify"
                     target="_blank"
                   >
                     <PiGithubLogoLight className="mr-2 h-4 w-4" />
@@ -120,14 +125,14 @@ export function QuestifyContentView() {
           transition={{ delay: 0.4 }}
           className="text-3xl font-bold text-center "
         >
-          Questify
+          Jobify
         </motion.h1>
         <div className="flex items-center gap-x-2 justify-center my-4">
           <p className="bg-[#282828] w-fit text-neutral-300 rounded-md px-2 h-5 flex items-center justify-center text-[10px] ">
             Project
           </p>
           <div className="w-1 h-1 rounded-full bg-neutral-400" />
-          <span className="text-xs">Jul 30, 2024</span>
+          <span className="text-xs">May 17, 2023</span>
         </div>
 
         <div className="w-full flex justify-center items-center mt-8">
@@ -147,27 +152,24 @@ export function QuestifyContentView() {
             width={1000}
             height={1000}
             className="rounded-lg h-72 w-full object-cover"
-            src="/images/questify.png"
+            src="/images/jobify.png"
             alt=""
           />
 
-          <h2 className="text-2xl mt-9">What is Questify?</h2>
+          <h2 className="text-2xl mt-9">What is Jobify?</h2>
 
           <p className="my-7">
-            Questify is an AI-driven laboratory platform aimed at
-            revolutionizing software engineering education. It provides a
-            cloud-based, interactive platform for students and professors,
-            offering a seamless and efficient environment to conduct laboratory
-            activities for courses like Algorithms Design, Object-Oriented
-            Programming, and more.
+            Jobify is a comprehensive job management website offering users the
+            ability to track their job history. Users can effortlessly add,
+            edit, delete jobs, and modify their profiles.
           </p>
 
           <div className="my-9">
             <Image
               height={1000}
               width={1000}
-              className="rounded-lg h-72 w-full object-cover object-top"
-              src="/images/questify-dashboard-page.png"
+              className="rounded-lg h-80 w-full object-cover object-top"
+              src="/images/jobify-main.png"
               alt=""
             />
           </div>
@@ -181,68 +183,27 @@ export function QuestifyContentView() {
             >
               <li>
                 <strong className="text-neutral-200">
-                  CMU OAuth Integration:
+                  Data visualization:
                 </strong>{" "}
-                Secure authentication through Chiang Mai University's OAuth
-                service.
+                See Monthly Applications with Bar Chart and Area Chart
+              </li>
+              <li>
+                <strong className="text-neutral-200">Filter jobs:</strong>{" "}
+                Filter jobs using search bar, status, type, and sort by
+              </li>
+              <li>
+                <strong className="text-neutral-200">Add job:</strong>
+                Add job using position, company name, location, type of work and
+                status
               </li>
               <li>
                 <strong className="text-neutral-200">
-                  Multi-language Code Compiler:
+                  Profile management:
                 </strong>{" "}
-                Supports Java, Python, and JavaScript for coding and testing.
-              </li>
-              <li>
-                <strong className="text-neutral-200">
-                  Versioning Question System:
-                </strong>{" "}
-                Allows professors to create multiple versions of assignments.
-              </li>
-              <li>
-                <strong className="text-neutral-200">
-                  Laboratory Management System:
-                </strong>{" "}
-                Professors can design labs, manage assignments, and set test
-                cases.
-              </li>
-              <li>
-                <strong className="text-neutral-200">
-                  Logging and Activity Restrictions:
-                </strong>{" "}
-                Tracks user activity with restrictions on certain actions during
-                labs.
-              </li>
-              <li>
-                <strong className="text-neutral-200">
-                  Assessment Time Analysis & Score Management:
-                </strong>{" "}
-                Provides detailed insights into students' performance.
-              </li>
-              <li>
-                <strong className="text-neutral-200">
-                  Code Similarity Check:
-                </strong>{" "}
-                Detects plagiarism by comparing student submissions.
-              </li>
-              <li>
-                <strong className="text-neutral-200">
-                  Peer Support Request:
-                </strong>{" "}
-                Facilitates peer-to-peer help within the platform.
+                Update profile
               </li>
             </ul>
           </div>
-
-          <h2 className="text-2xl">User Experience and Design</h2>
-
-          <p className="mt-4 mb-9">
-            The platform is designed to be intuitive and user-friendly,
-            providing tools for both professors and students to interact with
-            the system seamlessly. It supports multi-language programming
-            environments and offers real-time feedback on coding assignments.
-            The interface allows for efficient lab management, including
-            assignment creation, tracking, and evaluation.
-          </p>
 
           <h2 className="text-2xl">Technology Stack</h2>
 
@@ -252,24 +213,18 @@ export function QuestifyContentView() {
               className="space-y-2"
             >
               <li>
-                <strong className="text-neutral-200">Frontend:</strong> Next.js
+                <strong className="text-neutral-200">Frontend:</strong> ReactJS
               </li>
               <li>
-                <strong className="text-neutral-200">Backend:</strong> Spring
-                Boot
+                <strong className="text-neutral-200">Backend:</strong> NodeJS &
+                ExpressJS
               </li>
               <li>
-                <strong className="text-neutral-200">Database:</strong> MySQL
+                <strong className="text-neutral-200">Database:</strong> MongoDB
               </li>
               <li>
                 <strong className="text-neutral-200">Authentication:</strong>{" "}
-                CMU OAuth, integrated for secure user login and identity
-                management.
-              </li>
-              <li>
-                <strong className="text-neutral-200">Infrastructure:</strong>{" "}
-                Hosted on Microsoft Azure, providing cloud-based scalability and
-                performance.
+                JWT
               </li>
             </ul>
           </div>

@@ -1,5 +1,5 @@
-import { ProjectContentView } from "@/components/content/view/project-content-view";
+import { JobifyContentView } from "@/components/content/view/jobify-content-view";
 
 export default function DashboardPage() {
-  return <ProjectContentView />;
+  return <JobifyContentView />;
 }
