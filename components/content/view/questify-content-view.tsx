@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { PiArrowLeftThin, PiGithubLogoLight } from "react-icons/pi";
+import {
+  PiArrowLeftThin,
+  PiGithubLogoLight,
+  PiGlobeLight,
+} from "react-icons/pi";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -72,19 +76,29 @@ export function QuestifyContentView() {
                 </div>
               </Link>
 
-              <Button
-                variant="secondary"
-                className="h-8 rounded-md px-3 text-xs"
-                asChild
-              >
-                <Link
-                  href="https://github.com/webwebweb5/questify-frontend-new"
-                  target="_blank"
+              <div className="flex gap-2">
+                <Button
+                  variant="default"
+                  className="h-8 rounded-md px-3 text-xs"
+                  disabled
                 >
-                  <PiGithubLogoLight className="mr-2 h-4 w-4" />
-                  Visit Project
-                </Link>
-              </Button>
+                  <PiGlobeLight className="mr-2 h-4 w-4" />
+                  Visit Website
+                </Button>
+                <Button
+                  variant="secondary"
+                  className="h-8 rounded-md px-3 text-xs"
+                  asChild
+                >
+                  <Link
+                    href="https://github.com/webwebweb5/questify-frontend-new"
+                    target="_blank"
+                  >
+                    <PiGithubLogoLight className="mr-2 h-4 w-4" />
+                    Visit Project
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
@@ -232,7 +246,7 @@ export function QuestifyContentView() {
 
           <h2 className="text-2xl">Technology Stack</h2>
 
-          <p className="mt-4 mb-9">
+          <div className="mt-4 mb-9">
             <ul
               style={{ listStyleType: "disc", paddingLeft: "20px" }}
               className="space-y-2"
@@ -258,7 +272,7 @@ export function QuestifyContentView() {
                 performance.
               </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
     </motion.div>

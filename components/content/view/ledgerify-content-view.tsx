@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { PiArrowLeftThin, PiGithubLogoLight } from "react-icons/pi";
+import { PiArrowLeftThin, PiGithubLogoLight, PiGlobeLight } from "react-icons/pi";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
@@ -72,19 +72,34 @@ export function LedgerifyContentView() {
                 </div>
               </Link>
 
-              <Button
-                variant="secondary"
-                className="h-8 rounded-md px-3 text-xs"
-                asChild
-              >
-                <Link
-                  href="https://github.com/webwebweb5/financial-tracker"
-                  target="_blank"
+              <div className="flex gap-2">
+                <Button
+                  variant="default"
+                  className="h-8 rounded-md px-3 text-xs"
+                  asChild
                 >
-                  <PiGithubLogoLight className="mr-2 h-4 w-4" />
-                  Visit Project
-                </Link>
-              </Button>
+                  <Link
+                    href="https://ledgerify.vercel.app/"
+                    target="_blank"
+                  >
+                    <PiGlobeLight className="mr-2 h-4 w-4" />
+                    Visit Website
+                  </Link>
+                </Button>
+                <Button
+                  variant="secondary"
+                  className="h-8 rounded-md px-3 text-xs"
+                  asChild
+                >
+                  <Link
+                    href="https://github.com/webwebweb5/financial-tracker"
+                    target="_blank"
+                  >
+                    <PiGithubLogoLight className="mr-2 h-4 w-4" />
+                    Visit Project
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
