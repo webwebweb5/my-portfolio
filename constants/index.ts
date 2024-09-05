@@ -2,8 +2,9 @@ import { ProjectCardProps } from "@/types";
 
 export const PROJECT_DATA: ProjectCardProps[] = [
   {
-    imageURL: "/images/financial-tracker.png",
-    title: "Financial Tracker",
+    imageURL: "/images/ledgerify/ledgerify.png",
+    link: "/dashboard/ledgerify",
+    title: "Ledgerify",
     badges: [
       {
         name: "Vite",
@@ -24,6 +25,7 @@ export const PROJECT_DATA: ProjectCardProps[] = [
   },
   {
     imageURL: "/images/questify.png",
+    link: "/dashboard/questify",
     title: "Questify",
     badges: [
       {
@@ -44,6 +46,7 @@ export const PROJECT_DATA: ProjectCardProps[] = [
   },
   {
     imageURL: "/images/jobify.png",
+    link: "/dashboard/jobify",
     title: "Jobify",
     badges: [
       {

@@ -4,6 +4,7 @@ import { ProjectCardProps } from "@/types";
 
 export function ProjectCard({
   imageURL,
+  link,
   title,
   badges,
   description,
@@ -12,7 +13,7 @@ export function ProjectCard({
   return (
     <div className="bg-[#1C1C1C] rounded-lg text-neutral-400 hover:scale-[1.025] duration-500 transition-all">
       <div className="rounded-lg duration-200 transition-all ease-in">
-        <Link href="/dashboard/1" className="w-full">
+        <Link href={link} className="w-full">
           <img
             className={`rounded-t-lg h-80 w-full object-cover brightness-95 ${isTop ? "object-top" : ""}`}
             src={imageURL}

@@ -21,7 +21,7 @@ import { usePathname } from "next/navigation";
 
 // ----------------------------------------------------------------------
 
-const numberOfProjects = 4;
+const numberOfProjects = 3;
 
 // ----------------------------------------------------------------------
 

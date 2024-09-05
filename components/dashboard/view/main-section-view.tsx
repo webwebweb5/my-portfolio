@@ -50,6 +50,7 @@ export function MainSectionView() {
               <ProjectCard
                 key={index}
                 imageURL={project.imageURL}
+                link={project.link}
                 title={project.title}
                 badges={project.badges}
                 description={project.description}

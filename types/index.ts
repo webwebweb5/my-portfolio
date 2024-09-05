@@ -1,5 +1,6 @@
 export interface ProjectCardProps {
   imageURL: string;
+  link: string;
   title: string;
   badges: BadgeProps[];
   description: string;
