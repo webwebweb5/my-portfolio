@@ -2,6 +2,24 @@ import { ProjectCardProps } from "@/types";
 
 export const PROJECT_DATA: ProjectCardProps[] = [
   {
+    imageURL: "/images/societify/societify-main.png",
+    link: "/dashboard/societify",
+    title: "Societify",
+    badges: [
+      {
+        name: "Vite",
+        color: "#9333ea",
+      },
+      {
+        name: "ExpressJS",
+        color: "#22c55e",
+      },
+    ],
+    description:
+      "Societify is a social media app with features like JWT authentication, post creation, commenting, image uploads, notifications, and more!",
+    isTop: true,
+  },
+  {
     imageURL: "/images/ledgerify/ledgerify.png",
     link: "/dashboard/ledgerify",
     title: "Ledgerify",
