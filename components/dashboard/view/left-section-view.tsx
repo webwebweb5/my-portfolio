@@ -63,8 +63,8 @@ export function LeftSectionView() {
 
               <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2 hover:scale-[1.025] duration-500 transition-all">
                 <PiEnvelopeLight />
-                <Link href="mailto:phiriyakorn@gmail.com" className="text-xs">
-                  phiriyakorn@gmail.com
+                <Link href="mailto:phiriyakornman@gmail.com" className="text-xs">
+                  phiriyakornman@gmail.com
                 </Link>
               </div>
 
@@ -114,8 +114,8 @@ export function LeftSectionView() {
             <div className="flex flex-wrap gap-1.5 text-xs mt-4 mb-2">
               <DevBadge name="ReactJS" color="#3b82f6" />
               <DevBadge name="NextJS" color="#6b7280" />
-              <DevBadge name="NodeJS" color="#22c55e" />
-              <DevBadge name="GO" color="#60a5fa" />
+              <DevBadge name="ExpressJS" color="#22c55e" />
+              {/* <DevBadge name="GO" color="#60a5fa" /> */}
             </div>
           </div>
 
