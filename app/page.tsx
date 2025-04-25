@@ -38,7 +38,7 @@ export default function Home() {
               <PiGithubLogoLight className="h-6 w-6" />
             </Link>
           </Button>
-          <ModeToggle />
+          {/* <ModeToggle /> */}
         </div>
       </div>
     </main>

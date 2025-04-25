@@ -10,7 +10,6 @@ export default function Layout({ children }: LayoutProps) {
       <div className="gap-4 flex flex-col md:flex-row">
         <LeftSectionView />
         {children}
-        {/* <View /> */}
       </div>
     </main>
   );

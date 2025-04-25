@@ -25,7 +25,7 @@ export function MainSectionView() {
     >
       <div className="bg-transparent rounded-2xl">
         <div>
-          <div className="bg-[#1C1C1C] md:bg-transparent rounded-lg flex gap-x-6 p-4">
+          <div className="bg-[#1C1C1C] rounded-lg flex gap-x-6 p-4">
             {/* <PiPolygonLight className="text-6xl text-neutral-50" /> */}
             <PiAtLight className="text-6xl text-neutral-50" />
 

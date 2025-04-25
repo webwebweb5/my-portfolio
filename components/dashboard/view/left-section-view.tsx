@@ -26,9 +26,9 @@ const numberOfProjects = 3;
 // ----------------------------------------------------------------------
 
 export function LeftSectionView() {
-  const pathname = usePathname()
+  const pathname = usePathname();
 
-  const isDashboard = pathname === "/dashboard"
+  const isDashboard = pathname === "/dashboard";
 
   return (
     <>
@@ -39,7 +39,9 @@ export function LeftSectionView() {
           opacity: 1,
           transition: { duration: 0.3, type: "spring", stiffness: 200 },
         }}
-        className={`${isDashboard ? "block" : "hidden md:block" } w-full md:w-80 h-fit md:sticky top-4`}
+        className={`${
+          isDashboard ? "block" : "hidden md:block"
+        } w-full md:w-80 h-fit md:sticky top-4`}
         // className="block w-full md:w-80 h-fit md:sticky top-4"
       >
         <div className="md:w-80 w-full p-4 border border-neutral-800 rounded-2xl h-full bg-[#1C1C1C]">
@@ -63,7 +65,10 @@ export function LeftSectionView() {
 
               <div className="flex items-center gap-x-1 font-medium text-neutral-300 mt-2 hover:scale-[1.025] duration-500 transition-all">
                 <PiEnvelopeLight />
-                <Link href="mailto:phiriyakornman@gmail.com" className="text-xs">
+                <Link
+                  href="mailto:phiriyakornman@gmail.com"
+                  className="text-xs"
+                >
                   phiriyakornman@gmail.com
                 </Link>
               </div>
@@ -93,7 +98,7 @@ export function LeftSectionView() {
                 asChild
               >
                 <Link href={"/"}>
-                  <PiHouseLight className="h-4 w-4" />
+                  <PiHouseLight className="h-4 w-4 text-white" />
                 </Link>
               </Button>
 
@@ -104,7 +109,7 @@ export function LeftSectionView() {
                 asChild
               >
                 <Link href={"https://github.com/webwebweb5"} target="_blank">
-                  <PiGithubLogoLight className="h-4 w-4" />
+                  <PiGithubLogoLight className="h-4 w-4 text-white" />
                 </Link>
               </Button>
             </div>
@@ -135,7 +140,9 @@ export function LeftSectionView() {
               </div>
               <div className="flex items-center gap-x-1">
                 <PiMagicWandThin />
-                <span className="text-xs font-regular">{numberOfProjects} Projects</span>
+                <span className="text-xs font-regular">
+                  {numberOfProjects} Projects
+                </span>
               </div>
             </div>
 
@@ -144,17 +151,37 @@ export function LeftSectionView() {
             <div className="mt-4">
               <div>
                 <h1 className="font-bold">Work Experiences</h1>
-                <div className="mt-7 flex justify-between">
-                  <div className="flex gap-x-3">
-                    <PiTerminalWindowFill className="w-6 h-6" />
-                    <div className="-mt-1">
-                      <h3 className="text-sm font-medium">Freelance</h3>
-                      <p className="text-[9px] text-neutral-400">Zomsan Tech</p>
+                <div className="flex flex-col gap-y-2 mt-6">
+                  <div className="flex justify-between">
+                    <div className="flex gap-x-3">
+                      <PiTerminalWindowFill className="w-6 h-6" />
+                      <div className="-mt-1">
+                        <h3 className="text-sm font-medium">Freelance</h3>
+                        <p className="text-[9px] text-neutral-400">
+                          Zomsan Tech
+                        </p>
+                      </div>
                     </div>
+                    <small className="text-[9px] text-neutral-300">
+                      Jan, 2023 - Current
+                    </small>
                   </div>
-                  <small className="text-[9px] text-neutral-300">
-                    Jan, 2023 - Current
-                  </small>
+                  <div className="flex justify-between">
+                    <div className="flex gap-x-3">
+                      <PiTerminalWindowFill className="w-6 h-6" />
+                      <div className="-mt-1">
+                        <h3 className="text-sm font-medium">
+                          Full-Stack Developer
+                        </h3>
+                        <p className="text-[9px] text-neutral-400">
+                          CRM & Cloud Consulting
+                        </p>
+                      </div>
+                    </div>
+                    <small className="text-[9px] text-neutral-300">
+                      Nov, 2024 - Current
+                    </small>
+                  </div>
                 </div>
               </div>
             </div>

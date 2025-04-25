@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={rubik.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
